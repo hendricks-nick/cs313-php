@@ -1,0 +1,33 @@
+/*
+ * Body Styles
+ */
+html {
+    background: url(background_image.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*
+ * Body Text Content
+ */
+.bodyTitle {
+    color: white;
+    text-align: center;
+}
+.bodyContent {
+    color: white;
+    text-align: center;
+}
+
+/*
+ * Menu Style
+ */
+
+ .menuContainer {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: auto;
+    justify-content: center;
+ }
