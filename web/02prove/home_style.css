@@ -14,7 +14,13 @@ html {
  */
 .bodyTitle {
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
     text-align: center;
+    display: grid;
+    grid-row: 2/9;
+    grid-column: 1/4;
+
 }
 .bodyContent {
     color: white;
@@ -30,4 +36,19 @@ html {
     grid-template-columns: 50px 50px 50px;
     grid-template-rows: auto;
     justify-content: center;
+    grid-row: 1/2;
+    grid-template-columns: repeat(3, 1fr);
  }
+
+ .menuContainer > div {
+     padding: 1em;
+ }
+ .menuBox {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+ }
+
+ .menuBox > div {
+     padding: 1em;
+ }
+
