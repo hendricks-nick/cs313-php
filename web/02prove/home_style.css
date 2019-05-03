@@ -38,6 +38,8 @@ html {
     justify-content: center;
     grid-row: 1/2;
     grid-template-columns: repeat(3, 1fr);
+    background-color: darkslategrey;
+    color:white;
  }
 
  .menuContainer > div {
