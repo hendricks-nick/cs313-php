@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="alt_style.css">
     <meta charset="UTF-8">
     <title>Assignments</title>
   </head>
