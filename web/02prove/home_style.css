@@ -1,58 +1,45 @@
 /*
  * Body Styles
  */
-html {
-    background: url(background_image.jpg) no-repeat center center fixed; 
+html,body {
+    background: url(mainBG.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+    margin:0;
 
-/*
- * Body Text Content
- */
-.bodyTitle {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    text-align: center;
-    display: grid;
-    grid-row: 2/9;
-    grid-column: 1/4;
-
-}
-.bodyContent {
-    color: white;
-    text-align: center;
+padding:0;
 }
 
 /*
  * Menu Style
  */
 
- .menuContainer {
-    display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: auto;
-    justify-content: center;
-    grid-row: 1/2;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: darkslategrey;
-    color:white;
-    padding: 0;
-    margin: 0;
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   position: sticky;
+   margin: 0;
+   background-color:#252730;
  }
 
- .menuContainer > div {
-     padding: 1em;
- }
- .menuBox {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
+ li {
+  float:left;
+  
  }
 
- .menuBox > div {
-     padding: 1em;
+ li a {
+   display: block;
+   color:#E6D5B4;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
  }
 
+ /* Change the link color to #111 (black) on hover */
+ li a:hover {
+   background-color: #111;
+ }
