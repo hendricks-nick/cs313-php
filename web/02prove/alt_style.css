@@ -1,5 +1,5 @@
 /*
- * Body Styles
+ * General Styles
  */
 html,body {
   background: url(background_image.jpg) no-repeat center center fixed;
@@ -11,19 +11,19 @@ html,body {
 /*
  * Menu Style
  */
- .menuBox {
+ .mContainer {
    background-color: #252730;
    overflow: hidden;
    display: grid;
    grid-template-columns:repeat(3, 1fr);
  }
 
-.menuBox > div {
+.mContainer > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
- .menuBox a {
+ .mContainer a {
    color: #E6D5B4;
    text-align: center;
    padding: 12px 14px;
@@ -31,7 +31,30 @@ html,body {
    font-size: 18px;
  }
 
- .menuBox a:hover {
+ .mContainer a:hover {
    background-color:#E6D5B4;
    color: #252730;
  }
+
+ /*
+  * Body Styles
+  */
+  .bContainer {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+  }
+
+  .bCenter {
+    background-color: #252730;
+    color: #E6D5B4;
+    padding: 2em;
+    text-align:center;
+    height: 100vh;
+  }
+
+  .bImages {
+
+  }
+  .bImages > img {
+    border-radius: 50%;
+  }

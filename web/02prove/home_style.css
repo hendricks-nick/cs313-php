@@ -11,19 +11,19 @@ html,body {
 /*
  * Menu Style
  */
- .menuBox {
+ .container {
    background-color: #252730;
    overflow: hidden;
    display: grid;
    grid-template-columns:repeat(3, 1fr);
  }
 
-.menuBox > div {
+.container > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
- .menuBox a {
+ .container a {
    color: #E6D5B4;
    text-align: center;
    padding: 12px 14px;
@@ -31,7 +31,7 @@ html,body {
    font-size: 18px;
  }
 
- .menuBox a:hover {
+ .container a:hover {
    background-color:#E6D5B4;
    color: #252730;
  }

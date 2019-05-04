@@ -1,6 +1,6 @@
 <?php
 echo '
-    <div class="menuBox">
+    <div class="mContainer">
       <div></div>
         <div>
           <a href="homepage.php">Home</a>
