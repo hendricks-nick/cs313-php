@@ -6,9 +6,6 @@
     <title>Homepage</title>
   </head>
   <body>
-      <?php include 'menu.php';?>
-      <div class="bodyTitle"> 
-          Nicholas Hendricks
-      </div>
+    <?php include 'menu.php';?>
   </body>
 </html>

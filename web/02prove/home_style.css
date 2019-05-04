@@ -2,44 +2,36 @@
  * Body Styles
  */
 html,body {
-    background: url(mainBG.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin:0;
-
-padding:0;
+  background: url(mainBG.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin:0;
+  padding:0;
 }
 
 /*
  * Menu Style
  */
-
- ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
+ .menuBox {
+   background-color: #252730;
    overflow: hidden;
-   position: sticky;
-   margin: 0;
-   background-color:#252730;
+   display: grid;
+   grid-template-columns:repeat(3, 1fr);
  }
 
- li {
-  float:left;
-  
- }
+.menuBox > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
- li a {
-   display: block;
-   color:#E6D5B4;
+ .menuBox a {
+   color: #E6D5B4;
    text-align: center;
-   padding: 14px 16px;
+   padding: 12px 14px;
    text-decoration: none;
+   font-size: 18px;
  }
 
- /* Change the link color to #111 (black) on hover */
- li a:hover {
-   background-color: #111;
+ .menuBox a:hover {
+   background-color:#E6D5B4;
+   color: #252730;
  }

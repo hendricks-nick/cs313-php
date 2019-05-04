@@ -6,9 +6,6 @@
     <title>Assignments</title>
   </head>
   <body>
-      <?php include 'menu.php';?>
-      <div class="bodyTitle">
-          Assignments
-      </div>
+    <?php include 'menu.php';?>
   </body>
 </html>

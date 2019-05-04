@@ -6,12 +6,6 @@
     <title>About</title>
   </head>
   <body>
-      <?php include 'menu.php';?>
-      <h1 class="bodyTitle">
-          About Me
-      </h1>
-      <div class="bodyContent">
-          TBD
-      </div>
+    <?php include 'menu.php';?>
   </body>
 </html>
