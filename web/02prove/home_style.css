@@ -11,19 +11,19 @@ html,body {
 /*
  * Menu Style
  */
- .container {
+ .mContainer {
    background-color: #252730;
    overflow: hidden;
    display: grid;
    grid-template-columns:repeat(3, 1fr);
  }
 
-.container > div {
+.mContainer > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
- .container a {
+ .mContainer a {
    color: #E6D5B4;
    text-align: center;
    padding: 12px 14px;
@@ -31,7 +31,7 @@ html,body {
    font-size: 18px;
  }
 
- .container a:hover {
+ .mContainer a:hover {
    background-color:#E6D5B4;
    color: #252730;
  }
