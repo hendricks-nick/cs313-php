@@ -28,13 +28,13 @@
 			<textarea name="tArea"></textarea>
 			<br>
 			<h1>Continents:</h1> 
-			<br><input type="checkbox" name="cont[]" value="NorthAmerica"/>North America
-			<br><input type="checkbox" name="cont[]" value="SouthAmerica"/>South America	
-			<br><input type="checkbox" name="cont[]" value="Europe"/>Europe
-			<br><input type="checkbox" name="cont[]" value="Asia"/>Asia
-			<br><input type="checkbox" name="cont[]" value="Australia"/>Australia
-			<br><input type="checkbox" name="cont[]" value="Africa"/>Africa
-			<br><input type="checkbox" name="cont[]" value="Antarctica"/>Antarctica
+			<br><input type="checkbox" name="cont[]" value="NA"/>North America
+			<br><input type="checkbox" name="cont[]" value="SA"/>South America	
+			<br><input type="checkbox" name="cont[]" value="EU"/>Europe
+			<br><input type="checkbox" name="cont[]" value="AS"/>Asia
+			<br><input type="checkbox" name="cont[]" value="AU"/>Australia
+			<br><input type="checkbox" name="cont[]" value="AF"/>Africa
+			<br><input type="checkbox" name="cont[]" value="AT"/>Antarctica
 			<br>
 			<input type="submit" value="submit"/>
 		</form>
