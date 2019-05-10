@@ -1,9 +1,7 @@
 <?php
   echo 
-  '<div class="imgbox">
-     <div class="center-fit">    
-       <img src="images/banner.png" alt="EthansToyCorner Banner">
-     </div>
+  '<div class="imgbox">   
+     <img class="cener-fit" src="images/banner.png" alt="EthansToyCorner Banner">
    </div> 
    <div class="mContainer">
      <div></div>
