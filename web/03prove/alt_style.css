@@ -1,0 +1,65 @@
+/*
+ * General Styles
+ */
+html,body {
+  background: url() no-repeat center center fixed;
+  background-size: cover;
+  margin:0;
+  padding:0;
+}
+
+/*
+ * Menu Style
+ */
+
+ .banner {
+   width: 100%;
+   height: auto;
+ }
+ .mContainer {
+   background-color: #A60606;
+   overflow: hidden;
+   display: grid;
+   grid-template-columns:repeat(3, 1fr);
+ }
+
+.mContainer > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+ .mContainer a {
+   color: white;
+   text-align: center;
+   padding: 12px 14px;
+   text-decoration: none;
+   font-size: 18px;
+ }
+
+ .mContainer a:hover {
+   background-color:#042738;
+   color: white;
+ }
+
+ /*
+  * Body Styles
+  */
+  .bContainer {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+  }
+
+  .bCenter {
+    background-color: #252730;
+    color: #E6D5B4;
+    padding: 2em;
+    text-align:center;
+    height: 100vh;
+  }
+
+  .bImages {
+
+  }
+  .bImages > img {
+    border-radius: 50%;
+  }
