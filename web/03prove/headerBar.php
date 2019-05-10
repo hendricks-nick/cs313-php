@@ -1,6 +1,6 @@
 <?php
   echo 
-  '<div class="banner"><img src="banner.png" alt="EthansToyCorner Banner"></div>
+  '<div class="banner"><img src="images/banner.png" alt="EthansToyCorner Banner"></div>
     <div class="mContainer">
       <div></div>
         <div>
