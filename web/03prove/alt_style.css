@@ -12,8 +12,8 @@ html,body {
  * Menu Style
  */
 
- .banner {
-   width: 100%;
+ .banner > img{
+   width: auto;
    height: auto;
  }
  .mContainer {
