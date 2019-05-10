@@ -1,7 +1,7 @@
 /*
  * General Styles
  */
-html,body {
+* {
   margin:0;
   padding:0;
 }
@@ -51,17 +51,20 @@ html,body {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
   }
-
+  .product{
+    align-items: center;
+    justify-content: center;
+  }
+  .product > img {
+    width:300px;
+    height: auto;
+  }
   .bCenter {
     background-color: #252730;
     color: #E6D5B4;
     padding: 2em;
     text-align:center;
     height: 100vh;
-  }
-
-  .bImages {
-
   }
   .bImages > img {
     border-radius: 50%;
