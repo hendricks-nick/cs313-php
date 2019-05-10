@@ -12,10 +12,15 @@ html,body {
  * Menu Style
  */
 
- .banner > img{
-   width: auto;
-   height: auto;
- }
+  .imgbox {
+    display: grid;
+    height: 100%;
+  }
+  .center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+  }
  .mContainer {
    background-color: #A60606;
    overflow: hidden;
