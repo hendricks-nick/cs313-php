@@ -49,15 +49,34 @@
   */
   .bContainer {
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
   }
   .product{
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    justify-items:center;
   }
   .product > img {
-    width:300px;
+    width:225px;
     height: auto;
+  }
+  .prodTitle {
+    text-align: center;
+    font-family: monospace;
+    color: #042738;
+  }
+  .addCartBtn {
+    background-color: #A60606;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    height: 50px;
+
   }
   .bCenter {
     background-color: #252730;
