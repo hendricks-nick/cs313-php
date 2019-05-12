@@ -1,12 +1,3 @@
-<?php
-  session_start();
-  
-  //Check if the session variable exists.
-  if(!isset($_SESSION['cart'])){
-    //If it doesn't, create an empty array.
-    $_SESSION['cart'] = array();
-  }
-?>
 <!DOCTYPE html>
 <html>
     <head>
