@@ -27,7 +27,7 @@
           <img src="images/potato_head.jpg" alt="potato head">
           <br>
           <div class="prodTitle">Mr. Potato Head</div>
-          <button class="addCartBtn" type="button" onclick="addToCart(potato)">Add To Cart</button>
+          <button class="addCartBtn" type="button" onclick="addToCart('potato')">Add To Cart</button>
         </div>
         <div class="product">
           <img src="images/rubiks.jpg" alt="rubiks">
