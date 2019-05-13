@@ -2,7 +2,9 @@
     session_start();
     
     //A simple array that contains product IDs.
-   
+    $_SESSION['cartItems'][] = array;
+    $_SESSION['cartPrices'][] = array;
+    $_SESSION['cartTotal'] = 0;
 ?>
 <!DOCTYPE html>
 <html>
