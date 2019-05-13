@@ -8,7 +8,7 @@
 	  url: "addcart.php",
 	  data: { item: $item }
 	}).done(function( msg ) {
-	  alert( "Data Saved: " + msg );
+	  alert("Added to cart");
 	});    
 
  }

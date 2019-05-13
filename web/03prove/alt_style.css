@@ -78,6 +78,10 @@
     height: 50px;
 
   }
+  .addCartBtn:hover {
+   background-color:#042738;
+   color: white;
+ }
   .bCenter {
     background-color: #252730;
     color: #E6D5B4;
