@@ -1,4 +1,4 @@
- $('.input').click(function(elem) {
+ function addToCart(elem) {
 	var $item = elem.id;
 
 	console.log($item);
@@ -11,4 +11,4 @@
 	  alert( "Data Saved: " + msg );
 	});    
 
- });
+ }

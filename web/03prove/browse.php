@@ -22,37 +22,37 @@
           <img src="images/basketball.jpg" alt="basketball hoop">
           <br>
           <div class="prodTitle"> Basketball Hoops </div>
-          <input class="addCartBtn" type="button" value="Add To Cart" id="hoop"/>
+          <input class="addCartBtn" type="button" value="Add To Cart" id="hoop" onclick="addToCart(this)"/>
         </div>
         <div class="product">
           <img src="images/potato_head.jpg" alt="potato head">
           <br>
           <div class="prodTitle">Mr. Potato Head</div>
-          <input class="addCartBtn" type="button" value="Add To Cart" id="potato"/>
+          <input class="addCartBtn" type="button" value="Add To Cart" id="potato" onclick="addToCart(this)"/>
         </div>
         <div class="product">
           <img src="images/rubiks.jpg" alt="rubiks">
           <br>
           <div class="prodTitle">Rubiks Cube</div>
-          <input class="addCartBtn" type="button" value="Add To Cart" id="rubik"/>
+          <input class="addCartBtn" type="button" value="Add To Cart" id="rubik" onclick="addToCart(this)"/>
         </div>
         <div class="product">
           <img src="images/bloks.jpg" alt="bloks">
           <br>
           <div class="prodTitle">Building Bloks</div>
-          <input class="addCartBtn" type="button" value="Add To Cart" id="blok"/>
+          <input class="addCartBtn" type="button" value="Add To Cart" id="blok" onclick="addToCart(this)"/>
         </div>
         <div class="product">
           <img src="images/trike.jpg" alt="tricycle">
           <br>
           <div class="prodTitle">Tricycle</div>
-          <input class="addCartBtn" type="button" value="Add To Cart" id="trike"/>
+          <input class="addCartBtn" type="button" value="Add To Cart" id="trike" onclick="addToCart(this)"/>
         </div>
         <div class="product">
           <img src="images/truck.jpg" alt="truck">
           <br>
           <div class="prodTitle">Toy Truck</div>
-          <input class="addCartBtn" type="button" value="Add To Cart" id="truck"/>
+          <input class="addCartBtn" type="button" value="Add To Cart" id="truck" onclick="addToCart(this)"/>
         </div>
       </div>
     </body>
