@@ -2,9 +2,11 @@
     session_start();
     
     //A simple array that contains products.
-    $_SESSION["cartItems"] = array();
-    $_SESSION["cartPrices"] = array();
-    $_SESSION["cartTotal"] = 0;
+    if(!isset($_SESSION["cartItems"])) {
+		$_SESSION["cartItems"] = array();
+		$_SESSION["cartPrices"] = array();
+		$_SESSION["cartTotal"] = 0;
+	}
 ?>
 <!DOCTYPE html>
 <html>

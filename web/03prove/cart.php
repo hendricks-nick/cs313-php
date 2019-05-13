@@ -22,8 +22,10 @@
 					. "Price: $" . $_SESSION['cartPrices'][$x] . "<br>" 
 					. '<input class="addCartBtn" type="button" value="Remove From Cart" id="' 
 					. $x . '" onclick="removeCart(this)"/>' 
-					. "<br>";
+					. "<br> <br> <br>";
 				}
+				
+				echo "Total: $" . $_SESSION['cartTotal']; . "<br>";
 			?>
 		</div>
 		<div></div>
