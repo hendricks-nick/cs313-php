@@ -12,7 +12,8 @@ function addToCart(element) {
         }
     });
     */
-	serializedData = element.serialize();
+	var $item = $(element);
+	var serializedData = $item.serialize();
 	console.log("Response: "+serializedData);
 	
 	$.post('addcart.php', serializedData, function(response) {
