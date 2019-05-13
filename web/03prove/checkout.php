@@ -10,6 +10,7 @@
 		<div class="bContainer">
 		<div></div>
 		<div>
+		<h1> Checkout </h1> <br> <br.
 		  <form class="checkoutForm"action="confirmation.php" method="post">
 			  <br>
 			  <input type="text" name="firstname" placeholder="First Name">

@@ -138,9 +138,9 @@
 	position: relative;
 	display: block;
 	padding: 19px 39px 18px 39px;
-	color: #FFF;
+	color: white;
 	margin: 0 auto;
-	background: #1abc9c;
+	background: #A60606;
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
@@ -150,6 +150,11 @@
 	margin-bottom: 10px;
 }
 .checkoutForm input[type="submit"]:hover {
-	background: #109177;
+	background: #042738;
 }
   
+h1, h3 {
+color: #042738;
+text-align: center;
+}
+	
