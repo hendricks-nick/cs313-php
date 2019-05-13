@@ -15,7 +15,7 @@
 		<div class="bContainer">
 		<div></div>
 		<div class="cartProd">
-			<h1> Shopping Cart</h1>
+			<h1> Shopping Cart</h1> <br> <br>
 			<?php
 				for ($x = 0; $x < sizeof($_SESSION['cartItems']); $x++){ 
 					echo "Product: " . $_SESSION['cartItems'][$x] . " <br>"
@@ -25,7 +25,7 @@
 					. "<br> <br> <br>";
 				}
 				
-				echo "Total: $" . $_SESSION['cartTotal'] . "<br>";
+				echo "Total: $" . $_SESSION['cartTotal'] . ".00 <br>";
 			?>
 		</div>
 		<div></div>
