@@ -14,7 +14,7 @@ function addToCart(element) {
     */
 	var $item = $(element);
 	var serializedData = $item.serialize();
-	console.log("Response: "+serializedData);
+	console.log("Response: "+ serializedData);
 	
 	$.post('addcart.php', serializedData, function(response) {
     // Log the response to the console
