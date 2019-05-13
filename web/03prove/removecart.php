@@ -4,9 +4,9 @@
 	
     unset($_SESSION['cartItems'][$id]);
 	
-	$_SESSION['cartTotal'] -= (int)$_SESSION['cartPrices'][$id];
+	//$_SESSION['cartTotal'] -= (int)$_SESSION['cartPrices'][$id];
 	
-	unset($_SESSION['cartPrices'][$id]);	
+	//unset($_SESSION['cartPrices'][$id]);	
 }
 	
 ?>
