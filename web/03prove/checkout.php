@@ -10,7 +10,7 @@
 		<div class="bContainer">
 		<div></div>
 		<div>
-		<h1> Checkout </h1> <br> <br.
+		<h1> Checkout </h1> <br> <br>
 		  <form class="checkoutForm"action="confirmation.php" method="post">
 			  <br>
 			  <input type="text" name="firstname" placeholder="First Name">
@@ -18,6 +18,7 @@
 			  <input type="text" name="lastname" placeholder="Last Name">
 			  <br><br>
 			  <h3> Address </h3>
+			  <br> <br>
 			  <input type="text" name="address_street" placeholder="Street Address">
 			  <br><br>
 			  <input type="text" name="address_city" placeholder="City">
