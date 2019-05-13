@@ -91,7 +91,6 @@
   }
   
   .checkoutForm{
-	max-width: 500px;
 	padding: 10px 20px;
 	background: #f4f7f8;
 	margin: 10px auto;
@@ -145,8 +144,6 @@
 	text-align: center;
 	font-style: normal;
 	width: 100%;
-	border: 1px solid #16a085;
-	border-width: 1px 1px 3px;
 	margin-bottom: 10px;
 }
 .checkoutForm input[type="submit"]:hover {
@@ -154,7 +151,7 @@
 }
   
 h1, h3 {
-color: #042738;
-text-align: center;
+	color: #042738;
+	text-align: center;
 }
 	
