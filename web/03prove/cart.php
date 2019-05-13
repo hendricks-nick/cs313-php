@@ -25,7 +25,7 @@
 					. "<br> <br> <br>";
 				}
 				
-				echo "Total: $" . $_SESSION['cartTotal']; . "<br>";
+				echo "Total: $" . $_SESSION['cartTotal'] . "<br>";
 			?>
 		</div>
 		<div></div>
