@@ -1,5 +1,5 @@
- $('.button').click(function(this) {
-	var $item = this.id;
+ $('.button').click(function(elem) {
+	var $item = elem.id;
 
 	console.log($item);
 
