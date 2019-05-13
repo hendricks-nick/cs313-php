@@ -1,3 +1,4 @@
+ // ajax call to add item to cart
  function addToCart(elem) {
 	var $item = elem.id;
 
@@ -13,6 +14,7 @@
 
  }
  
+ // ajax call to remove items from cart.
  function removeCart(elem) {
 	var $item = elem.id;
 
