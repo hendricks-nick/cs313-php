@@ -10,6 +10,6 @@
     </head>
     <body>
       <?php include 'headerBar.php';?>
-	  <?php echo $_SESSION['cartItems'];
+	  <?php var_dump($_SESSION['cartItems']);?>
     </body>
 </html>
