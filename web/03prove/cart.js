@@ -2,7 +2,7 @@ function addToCart(element) {
  
     console.log("Response: " + element.id);
 	
-	$.ajax({
+	/*$.ajax({
     type: "POST",
     url: "addcart.php",
     data: {item: $element.id},
@@ -11,5 +11,12 @@ function addToCart(element) {
                
         }
     });
-    
+    */
+	serializedData = element.serialize();
+	console.log("Response: "+serializedData);
+	
+	$.post('addcart.php', serializedData, function(response) {
+    // Log the response to the console
+    console.log("Response: "+response);
+});
   }
