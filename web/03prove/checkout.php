@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>title</title>
+        <title>Checkout</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="alt_style.css">
     </head>
@@ -10,7 +10,7 @@
 		<div class="bContainer">
 		<div></div>
 		<div>
-		  <form class="checkoutForm"action="confirmation.php" method="post">
+		  <form class="checkoutForm"action="<?php echo htmlspecialchars($_SERVER["confirmation.php"]);?>" method="post">
 			  <h1> Checkout </h1> <br> <br>
 			  <br>
 			  <input type="text" name="firstname" placeholder="First Name">
@@ -27,7 +27,7 @@
 			  <br><br>
 			  <input type="text" name="address_zip" placeholder="Zip Code">
 			  <br><br>
-			  <input type="submit" value="Submit">
+			  <input type="submit" value="Place Order">
 			</form>
 		</div>	
 		<div></div>

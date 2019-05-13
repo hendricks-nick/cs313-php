@@ -106,10 +106,6 @@
 	font-size: 1.4em;
 	margin-bottom: 10px;
 }
-.checkoutForm label {
-	display: block;
-	margin-bottom: 8px;
-}
 .checkoutForm input[type="text"] {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	background: rgba(255,255,255,.1);
