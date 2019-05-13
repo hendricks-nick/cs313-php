@@ -4,7 +4,7 @@ function addToCart(element) {
 	$.ajax({
     type: "POST",
     url: "addcart.php",
-    data: item,
+    data: {item: element.id},
         success: function(msg){
            alert( "Data Saved: " + msg );
                
