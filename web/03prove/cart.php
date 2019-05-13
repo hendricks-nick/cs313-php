@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,6 +9,16 @@
         <link rel="stylesheet" href="alt_style.css">
     </head>
     <body>
-	  <?php include 'headerBar.php';?>
+      <?php include 'headerBar.php';
+        if(!empty($_SESSION["cartItems"])) {     
+            foreach($_SESSION["cartItems"] as $items) {             
+                echo $items . "<br/>";      
+            } 
+        if(!empty($_SESSION["cartPrices"])) {     
+            foreach($_SESSION["cartPrices"] as $price) {             
+                echo $price . "<br/>";      
+            }
+        echo "Total: $" . $_SESSION["cartTotal"];    
+      ?>
     </body>
 </html>
