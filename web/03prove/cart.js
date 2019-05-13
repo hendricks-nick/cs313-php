@@ -1,4 +1,4 @@
- $('.button').click(function(elem) {
+ $('.input').click(function(elem) {
 	var $item = elem.id;
 
 	console.log($item);
