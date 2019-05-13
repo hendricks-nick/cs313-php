@@ -10,7 +10,7 @@
 		<div class="bContainer">
 		<div></div>
 		<div>
-		  <form class="checkoutForm"action="<?php echo htmlspecialchars($_SERVER["confirmation.php"]);?>" method="post">
+		  <form class="checkoutForm"action="<?php echo htmlspecialchars("confirmation.php");?>" method="post">
 			  <h1> Checkout </h1> <br> <br>
 			  <br>
 			  <input type="text" name="firstname" placeholder="First Name">
