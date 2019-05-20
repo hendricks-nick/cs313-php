@@ -25,11 +25,8 @@
 <html>
 	<head>
 	  <style>
-	    form {
+	    * {
 		  text-align: center;
-		}
-		.scripture {
-		  font-weight: bold;
 		}
 	  </style>
 	</head>
@@ -38,7 +35,7 @@
 		<?php
 			foreach ($db->query('SELECT * FROM scriptures') as $row)
 			{
-			  echo '<br><strong">' . $row['book'] . ' ' . $row['chapter'] 
+			  echo '<br><strong>' . $row['book'] . ' ' . $row['chapter'] 
 			  . ':' . $row['verse'] . '</strong> - ' . $row['content'];
 			}
 		?>
