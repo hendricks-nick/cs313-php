@@ -36,7 +36,7 @@
 	</script>
 	  <h1> Scripture Resources Results </h1>
 		<?php
-			foreach ($db->query('SELECT * FROM scriptures WHERE book ='. $_POST["book"]) as $row)
+			foreach ($db->query('SELECT * FROM scriptures WHERE book =\''. $_POST["book"] . '\'') as $row)
 			{
 			  echo '<br><strong>' . $row['book'] . ' ' . $row['chapter'] 
 			  . ':' . $row['verse'] . '</strong> - ' . $row['content'];
