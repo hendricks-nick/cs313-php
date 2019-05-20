@@ -13,7 +13,7 @@
 			<h1>Book:</h1> 
 			  <select name="book">
 				<option value="" disabled selected>Select your Book</option>
-				<option value="Johnohn">John</option>
+				<option value="John">John</option>
 				<option value="Doctrine and Covenants">Doctrine and Covenants</option>
 				<option value="Mosiah">Mosiah</option>
 			  </select>
