@@ -32,7 +32,7 @@
 	</head>
 	<body>
 	<script>
-	  console.log($_POST["book"]);
+      console.log(<?php echo json_encode($_POST); ?>);
 	</script>
 	  <h1> Scripture Resources Results </h1>
 		<?php
