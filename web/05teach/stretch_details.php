@@ -31,15 +31,12 @@
 	  </style>
 	</head>
 	<body>
-	<script>
-      console.log(<?php echo json_encode($_POST); ?>);
-	</script>
-	  <h1> Scripture Resources Results </h1>
+	  <h1> Scripture Resources </h1>
 		<?php
-			foreach ($db->query('SELECT * FROM scriptures WHERE book =\''. $_POST["book"] . '\'') as $row)
+			foreach ($db->query('SELECT content FROM scriptures WHERE id =\''. $_GET['id'] . '\'') as $row)
 			{
-			  echo '<br><a href="stretch_details.php?id=' . $row['id'] .'"><strong>' . $row['book'] . ' ' . $row['chapter'] 
-			  . ':' . $row['verse'] . '</strong></a>';
+			  echo '<br><strong>' . $row['book'] . ' ' . $row['chapter'] 
+			  . ':' . $row['verse'] . '</strong> - ' . $row['content'];
 			}
 		?>
 	</body>
