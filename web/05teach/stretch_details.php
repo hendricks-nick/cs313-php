@@ -31,9 +31,9 @@
 	  </style>
 	</head>
 	<body>
-	  <h1> Scripture Resources </h1>
+	  <h1> Scripture Resources Details</h1>
 		<?php
-			foreach ($db->query('SELECT content FROM scriptures WHERE id =\''. $_GET['id'] . '\'') as $row)
+			foreach ($db->query('SELECT * FROM scriptures WHERE id =\''. $_GET['id'] . '\'') as $row)
 			{
 			  echo '<br><strong>' . $row['book'] . ' ' . $row['chapter'] 
 			  . ':' . $row['verse'] . '</strong> - ' . $row['content'];
