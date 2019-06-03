@@ -15,8 +15,8 @@ body, html {
   grid-template-columns:repeat(3, 1fr);
 }
 .headerLinks a {
-  color: #E6D5B4;
-  text-align: center;
+  color: white;
+  text-align: left;
   padding: 12px 14px;
   text-decoration: none;
   font-size: 18px;
@@ -62,6 +62,10 @@ body, html {
   display: grid;
   grid-template-columns: 65px 1fr 1fr 1fr 65px;
   grid-template-rows: auto;
+}
+
+.bContainer > h2 {
+  text-align: center;
 }
 
 .searchButton:hover {
