@@ -16,7 +16,6 @@ body, html {
 }
 .headerLinks a {
   color: white;
-  text-align: left;
   padding: 12px 14px;
   text-decoration: none;
   font-size: 18px;
@@ -51,6 +50,8 @@ body, html {
   margin-top: 8px;
   font-size: 17px;
   border: none;
+  justify-self: end;
+  
 }
 .pageTitle {
   display: grid;
@@ -64,7 +65,7 @@ body, html {
   grid-template-rows: auto;
 }
 
-.bContainer > h2 {
+.bContainer h2 {
   text-align: center;
 }
 
