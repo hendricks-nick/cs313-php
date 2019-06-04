@@ -1,8 +1,6 @@
 <?php
     session_start();
 	include 'connection.php';
-
-	console.log(<?php echo json_encode($_POST); ?>);
 	
 	$fname = $_POST['fname'];
 	$lname = $_POST['lname'];
@@ -23,3 +21,7 @@
 	}*/
 
 ?>
+<script>
+  console.log(<?php echo json_encode($_POST); ?>);
+  console.log(<?php $insert; ?>);
+</script>
