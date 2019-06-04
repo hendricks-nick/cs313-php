@@ -14,7 +14,7 @@
       <?php include 'header.php';?> 
 	  <div class="pageTitle">
 	    <div></div>
-		<div><h1> Dashboard </h1></div>
+		<div><h1>Dashboard</h1></div>
 		<div></div>
 	  </div>
 	  <div class="bContainer">
@@ -25,12 +25,16 @@
         <div></div>
 	    <div></div>
 		<div class="ncColumn">
+		  <div><h3>Name</h3></div>
+		  <div><h3>Phone</h3></div>
+		  <div><h3>Email</h3></div>
 		  <?php
-			foreach ($db->query('SELECT * FROM contact WHERE id =\''. $_GET['id'] . '\'') as $row)
+			foreach ($db->query('SELECT contact_id, first_name, last_name, phone, email FROM contact') as $row)
 			{
-			  echo '<br><strong>' . $row['book'] . ' ' . $row['chapter'] 
-			  . ':' . $row['verse'] . '</strong> - ' . $row['content'];
-			}
+			  echo '<div>' . $row['first_name'] . ' ' . $row['last_name'] . '</div>' .
+			       '<div>' . $row['phone'] . '</div>' . 
+				   '<div>' . $row['email'] . '</div>';
+			
 		  ?>
 		</div>
 		<div class="fupColumn">
