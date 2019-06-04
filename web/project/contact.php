@@ -30,7 +30,7 @@
 	  <?php include 'header.php';?> 
 	  <div class="pageTitle">
 	    <div></div>
-		<div><h1><?php echo fname . " " . lname; ?></h1></div>
+		<div><h1><?php echo $fname . " " . $lname; ?></h1></div>
 		<div></div>
 	  </div>
 	  <form action="">
@@ -51,7 +51,7 @@
 						 '<br>Follow Up Date<br>'.
 						 '<input type="text" name="fup" value="'. $fup . '"><br><br>';
 			  ?>
-			  <h2>ContactInformation</h2>
+			  <h2>Contact Information</h2>
 			  <?php echo '<br>Phone<br>'.
 						 '<input type="text" name="phone" value="'. $phone . '">' .
 						 '<br>Email<br>'.
