@@ -31,7 +31,7 @@
 		  <?php
 			foreach ($db->query('SELECT * FROM contact') as $row)
 			{
-			  echo '<div>' . $row['first_name'] . ' ' . $row['last_name'] . '</div>' .
+			  echo '<div><strong><a href="contact.php?id=' . $row['id'] .'">' . $row['first_name'] . ' ' . $row['last_name'] . '</a></strong></div>' .
 			       '<div>' . $row['phone'] . '</div>' . 
 				   '<div>' . $row['email'] . '</div>';
 			}
