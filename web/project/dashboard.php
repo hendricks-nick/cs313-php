@@ -16,6 +16,8 @@
 	    <div></div>
 		<div><h1>Dashboard</h1></div>
 		<div></div>
+		<div></div>
+		<div></div>
 	  </div>
 	  <div class="bContainer">
 		<div></div>

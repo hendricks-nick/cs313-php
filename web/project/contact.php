@@ -32,6 +32,8 @@
 	    <div></div>
 		<div><h1><?php echo $fname . " " . $lname; ?></h1></div>
 		<div></div>
+		<div></div>
+		<div></div>
 	  </div>
 	  <form action="">
 		  <div class="bContainer">

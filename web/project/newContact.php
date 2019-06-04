@@ -14,6 +14,7 @@
       <?php include 'header.php';?> 
 	  <div class="bContainer">
 		<div></div>
+		<div></div>
 	    <div>
 	      <form action="addContact.php" method="post"> 
 		    <br>
@@ -32,6 +33,7 @@
 	        <input type="submit" value="Submit">
           </form> 
 		</div>
+		<div></div>
 		<div></div>
 	  </div>
     </body>
