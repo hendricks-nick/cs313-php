@@ -15,7 +15,7 @@
 	  <div class="bContainer">
 		<div></div>
 	    <div>
-	      <form action="/action_page.php"> /*post to a php page that runs a insert script*/
+	      <form action="addContact.php" method="post"> 
 		    <br>
 			First name:<br>
 		    <input type="text" name="fname">
