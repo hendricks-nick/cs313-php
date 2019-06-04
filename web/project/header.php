@@ -2,9 +2,9 @@
 echo '<div class="hContainer">
   <div></div>
     <div class="headerLinks">
-      <a href="contacts.php">Contacts</a>
-      <a href="companies.php">Companies</a>
       <a href="dashboard.php">Dashboard</a>
+      <a href="contacts.php">View Contacts</a>
+      <a href="newContact.php">Add Contacts</a>
     </div>
     <div></div>
     <div class="search-container">
