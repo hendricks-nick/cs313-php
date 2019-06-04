@@ -1,5 +1,6 @@
 <?php
     session_start();
+	include 'connection.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,21 +18,27 @@
 		<div></div>
 	  </div>
 	  <div class="bContainer">
+		<div></div>
+		<div><h2> New Contacts </h2></div>	
+		<div><h2> Follow Ups </h2></div>		
+		<div><h2> Quick Lists </h2></div>
+        <div></div>
 	    <div></div>
-		<div class="dbColumns">
-		  <h2> New Contacts </h2>
+		<div class="ncColumn">
+		  <?php
+			foreach ($db->query('SELECT * FROM contact WHERE id =\''. $_GET['id'] . '\'') as $row)
+			{
+			  echo '<br><strong>' . $row['book'] . ' ' . $row['chapter'] 
+			  . ':' . $row['verse'] . '</strong> - ' . $row['content'];
+			}
+		  ?>
+		</div>
+		<div class="fupColumn">
 		  <?php
 		    echo '';
 		  ?>
 		</div>
-		<div class="dbColumns">
-		  <h2> Follow Ups </h2>
-		  <?php
-		    echo '';
-		  ?>
-		</div>
-		<div class="dbColumns">
-		  <h2> Quick Lists </h2>
+		<div class="liColumn">
 		  <?php
 		    echo '';
 		  ?>

@@ -50,12 +50,13 @@ body, html {
   margin-top: 8px;
   font-size: 17px;
   border: none;
-  justify-self: end;
+  justify: end;
   
 }
+
 .pageTitle {
   display: grid;
-  grid-template-columns: 65px 150px 1fr;
+  grid-template-columns: 65px 1fr 1fr;
   grid-template-rows: auto;
 }
 
@@ -69,6 +70,8 @@ body, html {
   text-align: center;
 }
 
-.searchButton:hover {
-  background: #ccc;
+.ncColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
 }
