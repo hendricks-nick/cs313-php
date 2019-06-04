@@ -25,7 +25,7 @@
 		die();
 	}
 	
-	header("Location: contact.php?contact_id=" . $newId);
+	header("Location: contact.php?id=" . $newId);
 	
 	die();
 ?>
