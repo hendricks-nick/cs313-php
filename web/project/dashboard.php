@@ -8,7 +8,7 @@
       <title>Dashboard</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="style.css">
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
     <body>
       <?php include 'header.php';?> 
@@ -29,12 +29,12 @@
 		  <div><h3>Phone</h3></div>
 		  <div><h3>Email</h3></div>
 		  <?php
-			foreach ($db->query('SELECT contact_id, first_name, last_name, phone, email FROM contact') as $row)
+			foreach ($db->query('SELECT * FROM contact') as $row)
 			{
 			  echo '<div>' . $row['first_name'] . ' ' . $row['last_name'] . '</div>' .
 			       '<div>' . $row['phone'] . '</div>' . 
 				   '<div>' . $row['email'] . '</div>';
-			
+			}
 		  ?>
 		</div>
 		<div class="fupColumn">
