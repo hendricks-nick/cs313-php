@@ -12,7 +12,7 @@ CREATE TABLE note (
 CREATE TABLE contact (
     contact_id serial   NOT NULL,
     title varchar(30)   NULL,
-    company_id int   NOT NULL,
+    company varchar(50)   NULL,
     first_name varchar(30)   NULL,
     middle_name varchar(30)   NULL,
     last_name varchar(30)   NULL,
@@ -27,16 +27,6 @@ CREATE TABLE contact (
      )
 );
 
-CREATE TABLE company (
-    company_id serial   NOT NULL,
-    name varchar(60)   NULL,
-    phone varchar(15)   NULL,
-    address_id int   NOT NULL,
-    note_id int   NOT NULL,
-    CONSTRAINT pk_company PRIMARY KEY (
-        company_id
-     )
-);
 
 CREATE TABLE address (
     address_id serial   NOT NULL,
@@ -76,8 +66,6 @@ CREATE TABLE linkedcontact (
 ALTER TABLE note ADD CONSTRAINT fk_note_contact_id FOREIGN KEY(contact_id)
 REFERENCES contact (contact_id);
 
-ALTER TABLE contact ADD CONSTRAINT fk_contact_company_id FOREIGN KEY(company_id)
-REFERENCES company (company_id);
 
 ALTER TABLE contact ADD CONSTRAINT fk_contact_address_id FOREIGN KEY(address_id)
 REFERENCES address (address_id);
@@ -87,12 +75,6 @@ REFERENCES social (social_id);
 
 ALTER TABLE contact ADD CONSTRAINT fk_contact_linked_id FOREIGN KEY(linked_id)
 REFERENCES linkedcontact (linked_id);
-
-ALTER TABLE company ADD CONSTRAINT fk_company_address_id FOREIGN KEY(address_id)
-REFERENCES address (address_id);
-
-ALTER TABLE company ADD CONSTRAINT fk_company_note_id FOREIGN KEY(note_id)
-REFERENCES note (note_id);
 
 ALTER TABLE address ADD CONSTRAINT fk_address_contact_id FOREIGN KEY(contact_id)
 REFERENCES contact (contact_id);
