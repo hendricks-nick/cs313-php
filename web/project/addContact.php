@@ -12,14 +12,14 @@
 	$insert = "INSERT INTO contact (first_name, last_name, phone, email)
 			   VALUES (\'" . $fname . "\', \'"  . $lname . "\', \'"  . $phone . 
 			   "\', \'"  . $email . "\')";
-			   
-	console.log(<?php $insert; ?>);		   
+			   	   
+	$db->query($insert);
 	
-	if ($db->query($insert) === TRUE) {
+	/*if ($db->query($insert) === TRUE) {
 	  echo "Successfully Added";
 	}
 	else {
 	  echo "Error Adding";
-	}
+	}*/
 
 ?>

@@ -15,7 +15,7 @@
 	  <div class="bContainer">
 		<div></div>
 	    <div>
-	      <form action="addContact.php"> 
+	      <form action="addContact.php" method="post"> 
 		    <br>
 			First name:<br>
 		    <input type="text" name="fname">
