@@ -10,8 +10,8 @@
 	$email = $_POST['email'];
 	
 	$insert = "INSERT INTO contact (first_name, last_name, phone, email)
-			   VALUES (/'" . $fname . "/', /'"  . $lname . "/', /'"  . $phone . 
-			   "/', /'"  . $email . "/')";
+			   VALUES (\'" . $fname . "\', \'"  . $lname . "\', \'"  . $phone . 
+			   "\', \'"  . $email . "\')";
 			   
 	console.log(<?php $insert; ?>);		   
 	
