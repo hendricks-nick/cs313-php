@@ -74,8 +74,8 @@
 						 '<br>Zipcode<br>'.
 						 '<input type="text" name="zip" value="'. $zip . '">' .
 						 '<br>Country<br>'.
-						 '<input type="text" name="country" value="'. $country . '">';
-						 '<input type="hidden" name="contactID" value ="'. $id . '">'		 
+						 '<input type="text" name="country" value="'. $country . '">' .
+						 '<input type="hidden" name="contactID" value ="'. $id . '">';		 
 				?>
 				<div><input class="save" type="submit" value="Save"></div>
 				</form>
