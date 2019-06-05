@@ -7,6 +7,7 @@ body, html {
   margin:0;
   padding:0;
   background-color: #F3F3F3;
+  font-family: arial;
 }
 
 .headerLinks {
@@ -62,7 +63,10 @@ input {
 }
 .contactColumns {
   display: grid;
-  grid-template-columns: 65px 1fr 1fr 1fr 1fr 1fr 1fr 65px;
+  grid-template-columns: 65px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 65px;
   grid-template-rows: 100px;
   grid-gap: 12px;
+}
+.columnFormat {
+  background-color: #D3D2D2;
 }
