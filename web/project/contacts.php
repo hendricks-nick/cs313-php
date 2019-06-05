@@ -1,5 +1,6 @@
 <?php
     session_start();
+	include 'connection.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,5 +12,24 @@
     </head>
     <body>
       <?php include 'header.php';?>
+	  <div class="contactColumns">
+		  <div><h2>Title</h2></div>
+		  <div><h2>Name</h2></div>
+		  <div><h2>Company</h2></div>
+		  <div><h2>Phone</h2></div>
+		  <div><h2>Email</h2></div>
+		  <div><h2>Follow Up Date</h2></div>
+		  <?php
+				foreach ($db->query('SELECT * FROM contact') as $row)
+				{
+				  echo '<div>' . $row['title'] . '</div>' .
+					   '<div><strong><a href="contact.php?id=' . $row['id'] .'">' . $row['first_name'] . ' ' . $row['last_name'] . '</a></strong></div>' .
+					   '<div>' . $row['company'] . '</div>' .
+					   '<div>' . $row['phone'] . '</div>' . 
+					   '<div>' . $row['email'] . '</div>' .
+					   '<div>' . $row['fup_date'] . '</div>';
+				}
+			  ?>
+	  </div>
     </body>
 </html>

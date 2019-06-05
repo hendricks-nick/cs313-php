@@ -60,3 +60,8 @@ input {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
+.contactColumns {
+  display: grid;
+  grid template-columns: 65px 1fr 1fr 1fr 1fr 1fr 1fr 65px;
+  grid-template-rows: auto;
+}
