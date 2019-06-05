@@ -116,7 +116,14 @@ body, html {
 }
 
 .sidebar {
-  width: 65px;
+  width: 100px;
+}
+
+.save {
+  background-color: green;
+}
+.delete {
+  background-color: crimson;
 }
 
 @media screen and (max-width: 600px) {

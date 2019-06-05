@@ -3,6 +3,7 @@
 	include 'connection.php';
 	foreach ($db->query('SELECT * FROM contact WHERE id =\''. $_GET['id'] . '\'') as $row)
 			{
+				$id = $row['id'];
 				$title = $row['title'];
 				$fname = $row['first_name'];
 				$mname = $row['middle_name'];
@@ -36,7 +37,7 @@
 		<div></div>
 		<div></div>
 	  </div>
-	  <form action="">
+	  <form action="updateContact.php">
 		  <div class="bContainer">
 			<div></div>
 			<div>
@@ -73,11 +74,17 @@
 						 '<br>Zipcode<br>'.
 						 '<input type="text" name="zip" value="'. $zip . '">' .
 						 '<br>Country<br>'.
-						 '<input type="text" name="country" value="'. $country . '">';		 
-			  ?>
+						 '<input type="text" name="country" value="'. $country . '">';
+						 '<input type="hidden" name="contactID" value ="'. $id . '">'		 
+				?>
+				<div><input class="save" type="submit" value="Save"></div>
+				</form>
+				<form action="deleteContact.php">
+				  <?php echo '<input type="hidden" name="contactID" value ="'. $id . '">'?>
+				<div><input class="delete" type="submit" value="Delete"></div>
+				</form>
 			</div>
 			<div></div>
 	    </div>
-	  </form>
     </body>
 </html>
