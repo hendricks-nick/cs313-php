@@ -5,14 +5,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Dashboard</title>
+      <title>Contacts</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
     <body>
       <?php include 'header2.php';?>
-	  <div class="contactColumns">
+			<div class="pageTitle">
+				<div></div>
+				<div><h1>Contacts</h1></div>
+				<div></div>
+				<div></div>
+				<div></div>
+	  </div>
+			<div class="contactColumns">
 	      <div></div>
 		  <div><h2>ID</h2></div>
 		  <div><h2>Name</h2></div>
