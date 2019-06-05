@@ -17,7 +17,7 @@
     $zip = $_POST['zip'];
     $country = $_POST['country'];	
     
-	if ($_POST['action'] == 'save') {
+	if (isset($_POST['save'])) {
 		try {
 			$sql = 'UPDATE contact ' . 
 					  'SET title = :title,' .
@@ -65,7 +65,7 @@
 		
 		die();
 	}
-	else if ($_POST['action'] == 'delete') {		
+	else if (isset($_POST['delete'])) {		
 		try {
 			$sql = 'DELETE FROM contact WHERE id = :id';
 			$statement = $db->prepare($sql);

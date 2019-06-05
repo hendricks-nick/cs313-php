@@ -77,8 +77,8 @@
 						 '<input type="text" name="country" value="'. $country . '">' .
 						 '<input type="hidden" name="contactID" value ="'. $id . '">';		 
 				?>
-				<div><input class="save" type="submit" name="action" value="Save"></div>
-				<div><input class="delete" type="submit" name="action" value="Delete"></div>
+				<div><input class="save" type="submit" name="save" value="Save"/></div>
+				<div><input class="delete" type="submit" name="delete" value="Delete"/></div>
 			</div>
 			</form>
 			<div></div>
