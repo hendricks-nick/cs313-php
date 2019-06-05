@@ -37,8 +37,8 @@
 		<div></div>
 		<div></div>
 	  </div>
+	  <form action="updateContact.php" method="POST">
 		  <div class="bContainer">
-		   <form action="updateContact.php" method="POST">
 			<div></div>
 			<div>
 			  <h2>Personal Information</h2>
@@ -77,13 +77,10 @@
 						 '<input type="text" name="country" value="'. $country . '">' .
 						 '<input type="hidden" name="contactID" value ="'. $id . '">';		 
 				?>
-				<div><input class="save" type="submit" value="Save"></div>
-				</form>
-				<form action="deleteContact.php" method="POST">
-				  <?php echo '<input type="hidden" name="contactID" value ="'. $id . '">'?>
-				<div><input class="delete" type="submit" value="Delete"></div>
-				</form>
+				<div><input class="save" type="submit" name="save" value="Save"></div>
+				<div><input class="delete" type="submit" name="delete" value="Delete"></div>
 			</div>
+			</form>
 			<div></div>
 	    </div>
     </body>
