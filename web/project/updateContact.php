@@ -48,7 +48,7 @@
         $statement->bindValue(':city', $city);
         $statement->bindValue(':state', $state);
         $statement->bindValue(':zip', $zip);
-        $statement->bindValue(':country', $sountry);
+        $statement->bindValue(':country', $country);
 		
 		$statement->execute();
 		
