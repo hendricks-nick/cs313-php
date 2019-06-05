@@ -63,5 +63,6 @@ input {
 .contactColumns {
   display: grid;
   grid-template-columns: 65px 1fr 1fr 1fr 1fr 1fr 1fr 65px;
-  grid-template-rows: 75px;
+  grid-template-rows: 100px;
+  grid-gap: 12px;
 }
