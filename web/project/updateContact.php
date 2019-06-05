@@ -31,7 +31,7 @@
                   'city = :city,' .  
                   'state = :state,' .  
                   'zip = :zip,' .  
-                  'country = :country' .  
+                  'country = :country ' .  
                   'WHERE id = :id';     
 
 		$statement = $db->prepare($insert);
