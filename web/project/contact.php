@@ -79,8 +79,8 @@
 				?>
 				<div><input class="save" type="submit" name="save" value="Save"></div>
 				<div><input class="delete" type="submit" name="delete" value="Delete"></div>
+				</form>
 			</div>
-			</form>
 			<div></div>
 	    </div>
     </body>
