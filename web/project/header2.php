@@ -5,7 +5,7 @@
         <a href="contacts.php">Contacts</a>
         <a href="newContact.php">New Contact</a>
         <div class="search-container">
-            <form action="searchResults.php" method="POST">
+            <form action="searchResults.php">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
             </form>

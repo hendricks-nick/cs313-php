@@ -65,6 +65,7 @@ body, html {
   display: grid;
   grid-template-columns: 65px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 65px;
   grid-template-rows: 100px;
+  text-align: center;
 }
 
 .topnav {
@@ -133,3 +134,4 @@ body, html {
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
+}
