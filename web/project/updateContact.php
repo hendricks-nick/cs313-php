@@ -2,7 +2,7 @@
     session_start();
 	include 'connection.php';
     
-    $id = $_POST['id'];
+    $id = $_POST['contactID'];
 	$title = $_POST['title'];
     $fname = $_POST['fname'];
     $mname = $_POST['mname'];

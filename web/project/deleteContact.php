@@ -2,7 +2,7 @@
     session_start();
 	include 'connection.php';
 	
-	$id = $_POST['id'];
+	$id = $_POST['contactID'];
     
     try {
 		$insert = 'DELETE FROM contact WHERE id = :id';
