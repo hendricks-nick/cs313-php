@@ -11,7 +11,7 @@
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
     <body>
-      <?php include 'header.php';?>
+      <?php include 'header2.php';?>
 	  <div class="contactColumns">
 	      <div></div>
 		  <div><h2>ID</h2></div>
