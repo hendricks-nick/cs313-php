@@ -19,7 +19,7 @@
 		die();
 	}
 	
-	header("Location: dashboard.php?deleteSuccess=y";
+	header("Location: dashboard.php";
 	
 	die();
 ?>
