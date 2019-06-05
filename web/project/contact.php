@@ -37,8 +37,8 @@
 		<div></div>
 		<div></div>
 	  </div>
-	  <form action="updateContact.php" method="POST">
 		  <div class="bContainer">
+		   <form action="updateContact.php" method="POST">
 			<div></div>
 			<div>
 			  <h2>Personal Information</h2>
