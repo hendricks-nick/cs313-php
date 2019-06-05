@@ -5,8 +5,8 @@
 	$id = $_POST['contactID'];
     
     try {
-		$insert = 'DELETE FROM contact WHERE id = :id';
-		$statement = $db->prepare($insert);
+		$sql = 'DELETE FROM contact WHERE id = :id';
+		$statement = $db->prepare($sql);
 		
         $statement->bindValue(':id', $id);
         

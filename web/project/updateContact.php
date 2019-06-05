@@ -18,7 +18,7 @@
     $country = $_POST['country'];	
     
     try {
-        $insert = 'UPDATE contact ' . 
+        $sql = 'UPDATE contact ' . 
                   'SET title = :title,' .
                   'first_name = :fname,' .     
                   'middle_name = :mname,' .  
@@ -26,7 +26,7 @@
                   'company = :company,' .
                   'phone = :phone,' .  
                   'email = :email,' .  
-                  'fup = :fup,' .  
+                  'fup_date = :fup,' .  
                   'street = :street,' .  
                   'city = :city,' .  
                   'state = :state,' .  
@@ -34,7 +34,7 @@
                   'country = :country ' .  
                   'WHERE id = :id';     
 
-		$statement = $db->prepare($insert);
+		$statement = $db->prepare($sql);
         
         $statement->bindValue(':title', $title);
         $statement->bindValue(':fname', $fname);
