@@ -33,15 +33,15 @@
 		  <?php
 				foreach ($db->query("SELECT * FROM contact WHERE first_name = \'" . $_GET['search'] . "\'") as $row)
 				{
-				  echo "<div></div>" .
-				       "<div class='columnFormat'>$row['id'] </div>" .
-							 "<div><strong><a href='contact.php?id=$row['id']'>$row['first_name'] $row['last_name']</a></strong></div>" .
-							 "<div class='columnFormat'>$row['company']</div>" .
-							 "<div> $row['title']</div>" .
-						 	 "<div class='columnFormat'>$row['phone']</div>" . 
-							 "<div>$row['email']</div>" .
-							 "<div class='columnFormat'>$row['fup_date']</div>" .
-							 "<div></div>";
+				  echo '<div></div>' .
+				       '<div>' . $row['id'] . '</div>' .
+					     '<div><strong><a href="contact.php?id=' . $row['id'] .'">' . $row['first_name'] . ' ' . $row['last_name'] . '</a></strong></div>' .
+					     '<div>' . $row['company'] . '</div>' .
+					     '<div>' . $row['title'] . '</div>' .
+					     '<div>' . $row['phone'] . '</div>' . 
+					     '<div>' . $row['email'] . '</div>' .
+					     '<div>' . $row['fup_date'] . '</div>' .
+					     '<div></div>';
 				}
 			  ?>
 	  </div>
