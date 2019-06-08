@@ -32,7 +32,17 @@
 		  <div></div>
 		  <?php
 				foreach ($db->query('SELECT * FROM contact WHERE lower(first_name) LIKE lower(\'%' . $_GET["search"] . '%\')' .
-				     	 	 	 	 	 			' OR lower(email) LIKE lower(\'%' . $_GET["search"] . '%\')') as $row)
+														' OR lower(middle_name) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(last_name) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(title) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(company) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(phone) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(email) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(street) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(city) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(state) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(zip) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+				     	 	 	 	 	 			' OR lower(country) LIKE lower(\'%' . $_GET["search"] . '%\')') as $row)
 				{
 				  echo '<div></div>' .
 				       '<div>' . $row['id'] . '</div>' .
