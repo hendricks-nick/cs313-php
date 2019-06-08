@@ -31,7 +31,18 @@
 		  <div><h2>Follow Up Date</h2></div>
 		  <div></div>
 		  <?php
-				foreach ($db->query('SELECT * FROM contact WHERE lower(ALL) =lower(\'' . $_GET["search"] . '\')') as $row)
+				foreach ($db->query('SELECT * FROM contact WHERE lower(first_name)=lower(\'' . $_GET["search"] . '\') OR ' .
+														'lower(medium_name)=lower(\'' . $_GET["search"] . '\') OR ' .
+														'lower(last_name)=lower(\'' . $_GET["search"] . '\') OR ') .
+														'lower(email)=lower(\'' . $_GET["search"] . '\') OR ' . 
+														'lower(phone)=lower(\'' . $_GET["search"] . '\') OR ' . 
+														'lower(title)=lower(\'' . $_GET["search"] . '\') OR ' . 
+														'lower(company)=lower(\'' . $_GET["search"] . '\') OR ' . 
+														'lower(street)=lower(\'' . $_GET["search"] . '\') OR ' . 
+														'lower(city)=lower(\'' . $_GET["search"] . '\') OR ' . 
+														'lower(state)=lower(\'' . $_GET["search"] . '\') OR ' . 
+														'lower(zip)=lower(\'' . $_GET["search"] . '\') OR ' . 
+														'lower(country)=lower(\'' . $_GET["search"] . '\')' as $row)
 				{
 				  echo '<div></div>' .
 				       '<div>' . $row['id'] . '</div>' .
