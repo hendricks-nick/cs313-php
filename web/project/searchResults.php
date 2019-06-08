@@ -1,6 +1,6 @@
 <?php
     session_start();
-	include 'connection.php';
+	  include 'connection.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,17 +31,17 @@
 		  <div><h2>Follow Up Date</h2></div>
 		  <div></div>
 		  <?php
-				foreach ($db->query("SELECT * FROM contact WHERE first_name =" . $_GET['search'] . ) as $row)
+				foreach ($db->query("SELECT * FROM contact WHERE first_name = $_GET['search']") as $row)
 				{
-				  echo '<div></div>' .
-				       '<div class="columnFormat">' . $row['id'] . '</div>' .
-					   '<div><strong><a href="contact.php?id=' . $row['id'] .'">' . $row['first_name'] . ' ' . $row['last_name'] . '</a></strong></div>' .
-					   '<div class="columnFormat">' . $row['company'] . '</div>' .
-					   '<div>' . $row['title'] . '</div>' .
-					   '<div class="columnFormat">' . $row['phone'] . '</div>' . 
-					   '<div>' . $row['email'] . '</div>' .
-					   '<div class="columnFormat">' . $row['fup_date'] . '</div>' .
-					   '<div></div>';
+				  echo "<div></div>" .
+				       "<div class='columnFormat'>$row['id'] </div>" .
+							 "<div><strong><a href='contact.php?id=$row['id']'>$row['first_name'] $row['last_name']</a></strong></div>" .
+							 "<div class='columnFormat'>$row['company']</div>" .
+							 "<div> $row['title']</div>" .
+						 	 "<div class='columnFormat'>$row['phone']</div>" . 
+							 "<div>$row['email']</div>" .
+							 "<div class='columnFormat'>$row['fup_date']</div>" .
+							 "<div></div>";
 				}
 			  ?>
 	  </div>
