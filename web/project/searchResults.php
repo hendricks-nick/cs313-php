@@ -31,7 +31,7 @@
 		  <div><h2>Follow Up Date</h2></div>
 		  <div></div>
 		  <?php
-				foreach ($db->query("SELECT * FROM contact WHERE first_name = '$_GET['search']'") as $row)
+				foreach ($db->query("SELECT * FROM contact WHERE first_name = \'"$_GET['search']"\'") as $row)
 				{
 				  /*echo "<div></div>" .
 				       "<div class='columnFormat'>$row['id'] </div>" .
