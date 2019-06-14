@@ -1,6 +1,6 @@
 <?php
     session_start();
-	include 'connection.php';
+	  include 'connection.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,17 +31,28 @@
 		  <div><h2>Follow Up Date</h2></div>
 		  <div></div>
 		  <?php
-				foreach ($db->query("SELECT * FROM contact WHERE first_name =" . $_GET['search'] . ) as $row)
+				foreach ($db->query('SELECT * FROM contact WHERE lower(first_name) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(middle_name) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(last_name) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(title) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(company) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(phone) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(email) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(street) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(city) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(state) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+														' OR lower(zip) LIKE lower(\'%' . $_GET["search"] . '%\')' .
+				     	 	 	 	 	 			' OR lower(country) LIKE lower(\'%' . $_GET["search"] . '%\')') as $row)
 				{
 				  echo '<div></div>' .
-				       '<div class="columnFormat">' . $row['id'] . '</div>' .
-					   '<div><strong><a href="contact.php?id=' . $row['id'] .'">' . $row['first_name'] . ' ' . $row['last_name'] . '</a></strong></div>' .
-					   '<div class="columnFormat">' . $row['company'] . '</div>' .
-					   '<div>' . $row['title'] . '</div>' .
-					   '<div class="columnFormat">' . $row['phone'] . '</div>' . 
-					   '<div>' . $row['email'] . '</div>' .
-					   '<div class="columnFormat">' . $row['fup_date'] . '</div>' .
-					   '<div></div>';
+				       '<div>' . $row['id'] . '</div>' .
+					     '<div><strong><a href="contact.php?id=' . $row['id'] .'">' . $row['first_name'] . ' ' . $row['last_name'] . '</a></strong></div>' .
+					     '<div>' . $row['company'] . '</div>' .
+					     '<div>' . $row['title'] . '</div>' .
+					     '<div>' . $row['phone'] . '</div>' . 
+					     '<div>' . $row['email'] . '</div>' .
+					     '<div>' . $row['fup_date'] . '</div>' .
+					     '<div></div>';
 				}
 			  ?>
 	  </div>
